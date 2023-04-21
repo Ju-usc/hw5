@@ -21,5 +21,11 @@ std::set<std::string> wordle(
     const std::string& in,
     const std::string& floating,
     const std::set<std::string>& dict);
+std::set<std::string> floatComb(
+    const std::string& in,
+    const std::string& floating,
+    std::set<std::string>& combSets,
+    const std::set<std::string>& dict);
 
+void allComb(std::string in, std::set<std::string>& combSets, int len, const std::set<std::string>& dict);
 #endif
